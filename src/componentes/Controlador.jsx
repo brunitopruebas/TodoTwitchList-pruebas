@@ -109,7 +109,7 @@ const Controlador = (client, channel, command, username, tarea, id, badges) => {
       perfil.find(item => {
         if (item.username === username) {
           const listaTareas = item.tareas.forEach(i => {
-            client.say(channel, `/me imGlitch @${username} imGlitch TAREA: 📖  ${i.tarea} 🔖 !marcar ${i.id} 🔖 !eliminar ${i.id} BegWan`)
+            client.say(channel, `/me imGlitch @${username} imGlitch TAREA: 📖  ${i.tarea} 🔖 !check ${i.id} 🔖 !delete ${i.id} BegWan`)
           })
           var anuncio = `/me You don't have any tasks to remember. !commands to review everything I can do BegWan VirtualHug .`
           if (item.tareas.length === 0) {
